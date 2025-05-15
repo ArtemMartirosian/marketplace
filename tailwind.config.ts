@@ -44,17 +44,29 @@ export default {
           gray: "#ececec",
         },
         white: {
-          500 : "#FFFFFF"
+          500 : "#FFFFFF",
+          600: '#E6EAFB',
+          700: '#E4E9FB',
         },
         black: {
           500: '#000000'
         },
         blue: {
-          500: '#10253E'
+          500: '#10253E',
+          600: '#1940C4'
         },
         gray : {
           500 : '#F3F4F8',
           700 : '#89909E',
+          800 : '#6A7383',
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
