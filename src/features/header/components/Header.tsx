@@ -1,0 +1,31 @@
+import React from 'react';
+import Logo from "@/assets/Logo.svg"
+import ChatIcon from "@/assets/icons/ChatIcon.svg"
+import Image from "next/image";
+import {MENU_CONSTANT} from "@/features/header/constants/menu.constants";
+
+const Header = () => {
+    return (
+        <header className='w-full text-black sm:px-[80px] px-[20px] h-[64px] flex items-center justify-between'>
+            <div className='flex gap-[70px]'>
+                <Image src={Logo} alt='logo'/>
+                <div className='flex gap-8'>
+                    {
+                        MENU_CONSTANT.map((item) => {
+                            return (
+                                <span className='hover:text-primary-blue cursor-pointer' key={item.id}>{item.name}</span>
+                            )
+                        } )
+                    }
+                </div>
+            </div>
+
+            <div className='flex gap-2'>
+                <Image src={ChatIcon} alt='chat icon'/>
+                <span className='text-primary-blue'>Связаться с нами</span>
+            </div>
+        </header>
+    );
+};
+
+export default Header;
