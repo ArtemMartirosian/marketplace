@@ -8,7 +8,7 @@ import Select from "@/Components/Select";
 
 const Footer = () => {
     return (
-        <footer className='w-full  mt-20 bg-gray-500'>
+        <footer className='w-full max-w-[1920px] mx-auto bg-gray-500'>
 
             <div
                 className='h-[756px] bg-no-repeat bg-cover bg-center flex justify-center items-center'

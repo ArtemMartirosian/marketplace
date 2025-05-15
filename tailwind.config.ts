@@ -43,6 +43,15 @@ export default {
           white: "#EEF2FE",
           gray: "#ececec",
         },
+        white: {
+          500 : "#FFFFFF"
+        },
+        black: {
+          500: '#000000'
+        },
+        blue: {
+          500: '#10253E'
+        },
         gray : {
           500 : '#F3F4F8',
           700 : '#89909E',

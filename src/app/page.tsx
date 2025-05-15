@@ -1,9 +1,9 @@
-import Image from "next/image";
+import OffersSection from "@/features/offers/components/OffersSection";
 
 export default function Home() {
   return (
-    <div className="">
-
+    <div className="flex flex-col items-center">
+        <OffersSection/>
     </div>
   );
 }
