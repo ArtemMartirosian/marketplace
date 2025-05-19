@@ -14,7 +14,7 @@ const Footer = () => {
                 className='h-[756px] bg-no-repeat bg-cover bg-center flex justify-center items-center'
                 style={{ backgroundImage: `url(${Intersect.src})` }}
             >
-                <div className='max-w-[1350px] sm:px-[80px] px-[20px] w-full'>
+                <div className='max-w-[1350px] 2xl:px-[80px] px-[20px] w-full'>
                     <p className='text-primary-white text-center font-semibold 2xl:text-[50px] sm:text-[32px] text-[24px] 2xl:leading-[52px] sm:leading-[30px] leading-[24px]'>Остались вопросы? Оставьте заявку <br/> и получите консультацию</p>
                     <p className='2xl:text-[24px] text-[16px] text-center 2xl:mt-6 mt-4 2xl:leading-[36px] leading-[16px] text-primary-white'>Специалист отдела инвестиций свяжется с вами <br className='2xl:block hidden'/> и ответит на все вопросы.</p>
 
@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='h-[64px] px-[80px] mt-5 flex items-center justify-between '>
+            <div className='h-[64px] 2xl:px-[80px] px-[30px] mt-5 flex items-center justify-between '>
                 <Image src={Logo} alt='logo'/>
 
                 <div className='flex gap-6'>

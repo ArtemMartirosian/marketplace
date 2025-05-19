@@ -12,7 +12,7 @@ export default {
       screens: {
         "4xl": "1920px",
         "3xl": "1720px",
-        "2xl": "1320px",
+        "2xl": "1405px",
         xl: "1280px",
         lg: "1024px",
         md: "768px",
@@ -47,6 +47,7 @@ export default {
           500 : "#FFFFFF",
           600: '#E6EAFB',
           700: '#E4E9FB',
+          800: '#DDE2F1',
         },
         black: {
           500: '#000000'
@@ -61,6 +62,7 @@ export default {
           500 : '#F3F4F8',
           700 : '#89909E',
           800 : '#6A7383',
+          900 : '#959CA7',
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
