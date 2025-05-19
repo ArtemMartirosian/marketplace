@@ -74,9 +74,97 @@ const About = () => {
                             Наша стратегия развития направлена на укрепление позиций на рынке и расширение продуктового портфеля
                         </p>
 
+                        <div className='2xl:mt-[60px] mt-[30px] flex flex-col 2xl:gap-10 gap-6'>
+
+                            <div className='flex md:flex-row flex-col 2xl:gap-10 gap-6'>
+                                <div className='max-w-[181px] w-full h-[153px] rounded-[4px] bg-gray-800'></div>
+                                <p className='text-[24px] leading-[36px]'>Географическая экспансия: Выход на международные рынки, начиная с СНГ и стран Восточной Европы.</p>
+                            </div>
+
+                            <div className='flex md:flex-row flex-col 2xl:gap-10 gap-6'>
+                                <div className='max-w-[181px] w-full h-[153px] rounded-[4px] bg-gray-800'></div>
+                                <p className='text-[24px] leading-[36px]'>Расширение продуктовой линейки: Введение новых финансовых инструментов, таких как деривативы и структурированные продукты.</p>
+                            </div>
+
+                            <div className='flex md:flex-row flex-col 2xl:gap-10 gap-6'>
+                                <div className='max-w-[181px] w-full h-[153px] rounded-[4px] bg-gray-800'></div>
+                                <p className='text-[24px] leading-[36px]'>Партнёрства: Сотрудничество с банками, страховыми компаниями и другими финансовыми институтами для увеличения клиентской базы.</p>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                </div>
+                    <div>
+                        <p className='font-semibold 2xl:mt-[40px] text-[40px] leading-[52px]'>
+                            История развития проекта inwis
+                        </p>
+
+                        <div className=' 2xl:grid 2xl:grid-cols-6 flex flex-wrap gap-5 2xl:mt-[60px] mt-[30px]'>
+
+                            {
+                                [1,2,3,4,5,6].map((val) => {
+                                    return (
+                                        <div key={val} className='flex w-[190px] flex-col 2xl:gap-10 gap-6 '>
+                                            <div className='w-full h-[153px] bg-gray-800'></div>
+                                            <div>
+                                                <p className='font-medium text-[24px] leading-[36px]'>2021 год</p>
+                                                <p className='text-[24px] leading-[36px]'>Основание компании</p>
+                                            </div>
+                                        </div>
+                                    )
+                                } )
+                            }
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <p className='font-semibold 2xl:mt-[40px] text-[40px] leading-[52px]'>
+                            Команда inwis
+                        </p>
+
+                        <div className='grid 2xl:mt-[60px] mt-[30px] 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5'>
+                            {
+                                [1,2,3,4,5,6].map((val) => {
+                                    return (
+                                        <div key={val} className='flex flex-col gap-2'>
+                                            <div className='h-[319px] bg-gray-800'></div>
+                                            <p className='text-[24px] leading-[36px]'>Сотрудник, должность</p>
+
+                                        </div>
+                                    )
+                                } )
+                            }
+                        </div>
+                    </div>
+
+                    <div>
+                        <p className='font-semibold 2xl:mt-[40px] text-[40px] leading-[52px]'>
+                            Кейсы и отзывы
+                        </p>
+
+                        <div className='2xl:mt-[60px] mt-[30px] flex flex-col 2xl:gap-10 gap-6'>
+                            {
+                                [1,2].map((val) => {
+                                    return (
+                                        <div key={val} className='grid md:grid-cols-2 grid-cols-1 2xl:gap-[60px] gap-[30px] '>
+                                            <div className='flex flex-col 2xl:gap-[40px] gap-[20px]'>
+                                                <p className='text-[36px] leading-[42px]'>Как стюардесса из Петербурга стала инвестиционным советником</p>
+                                                <p className='text-[24px] leading-[36px]'>В этом выпуске мы поговорили с Екатериной Прошенковой, в прошлом стюардессой, а теперь инвестиционным советником.</p>
+                                            </div>
+                                            <div className='h-[319px] bg-gray-800'></div>
+                                        </div>
+                                    )
+                                } )
+                            }
+                        </div>
+
+                    </div>
+
+
+                    </div>
             </div>
         </div>
     );
