@@ -52,7 +52,7 @@ const LotsPage = () => {
                                     <Select/>
                                 </div>
 
-                                <div className='flex flex-col gap-[6px] max-w-[480px]'>
+                                <div className='flex flex-col gap-[6px] w-full max-w-[480px]'>
                                     <p className='font-medium text-[14px] leading-[12px] text-gray-900'>сортировать</p>
                                     <Select/>
                                 </div>
