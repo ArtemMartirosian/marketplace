@@ -17,7 +17,7 @@ type LoanInformationValueProps = ChildrenProps & {
 export const LoanInformations = ({ children }: ChildrenProps) => {
   return (
     <LoanInformationContext value={true}>
-      <div className=" w-full max-w-[973px] h-fit flex flex-col gap-8">
+      <div className=" w-full max-w-[973px] h-fit flex flex-col sm:gap-8 gap-6">
         {children}
       </div>
     </LoanInformationContext>
@@ -28,7 +28,7 @@ export const LoanInformationsTitle = ({ children }: ChildrenProps) => {
   useLoanContext("LoanInformationsTitle");
 
   return (
-    <p className=" text-[20px] leading-[28px] font-bold text-blue-500">
+    <p className=" sm:text-[20px] text-[18px] leading-[28px] font-bold text-blue-500">
       {children}
     </p>
   );
@@ -43,7 +43,7 @@ export const LoanInformationGroup = ({ children }: ChildrenProps) => {
 
   return (
     <LoanInformationGroupContext value={true}>
-      <div className=" w-full h-fit grid grid-cols-[303px_1fr] items-center gap-8">
+      <div className=" w-full h-fit grid sm:grid-cols-[303px_1fr] 2xs:grid-cols-[220px_1fr] items-center sm:gap-8 2xs:gap-4 gap-2">
         {children}
       </div>
     </LoanInformationGroupContext>
@@ -54,7 +54,7 @@ export const LoanInformationName = ({ children }: ChildrenProps) => {
   useLoanInformationGroupContext("LoanInformationName");
 
   return (
-    <p className=" text-[18px] leading-[18px] font-medium text-gray-800">
+    <p className=" sm:text-[18px] leading-[18px] font-medium text-gray-800">
       {children}
     </p>
   );
@@ -69,7 +69,7 @@ export const LoanInformationValue = ({
 
   if (type === "text") {
     return (
-      <p className=" text-[18px] leading-[18px] font-medium text-gray-dark">
+      <p className=" sm:text-[18px] leading-[18px] font-medium text-gray-dark">
         {children}
       </p>
     );
