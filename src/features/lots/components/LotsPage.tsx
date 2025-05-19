@@ -61,7 +61,7 @@ const LotsPage = () => {
 
                     </div>
 
-                    <div className='grid 2xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6'>
+                    <div className='grid 2xl:grid-cols-3 2xl:mt-[80px] mt-[40px] sm:grid-cols-2 grid-cols-1 gap-6'>
                         {
                             [1,2,3,4,5,6].map((item) => {
                                 return <LotListItem key={item}/>
