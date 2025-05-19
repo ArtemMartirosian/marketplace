@@ -44,23 +44,26 @@ export default {
           gray: "#ececec",
         },
         white: {
-          500 : "#FFFFFF",
-          600: '#E6EAFB',
-          700: '#E4E9FB',
+          500: "#FFFFFF",
+          600: "#E6EAFB",
+          700: "#E4E9FB",
         },
         black: {
-          500: '#000000'
+          500: "#000000",
         },
         blue: {
-          500: '#10253E',
-          600: '#1940C4',
-          700: '#0A14FF'
-
+          500: "#10253E",
+          600: "#1940C4",
+          700: "#0A14FF",
+          levander: "#A7ADE7",
         },
-        gray : {
-          500 : '#F3F4F8',
-          700 : '#89909E',
-          800 : '#6A7383',
+        gray: {
+          500: "#F3F4F8",
+          700: "#89909E",
+          800: "#6A7383",
+          border: "#DDE2F1",
+          light: "#959CA7",
+          dark: "#424551",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -91,7 +94,6 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-
     },
   },
 } satisfies Config;
