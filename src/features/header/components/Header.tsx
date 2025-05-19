@@ -6,7 +6,7 @@ import {MENU_CONSTANT} from "@/features/header/constants/menu.constants";
 
 const Header = () => {
     return (
-        <header className='w-full text-black max-w-[1920px] mx-auto sm:px-[80px] px-[20px] h-[64px] flex items-center justify-between'>
+        <header className='w-full text-black max-w-[1920px] mx-auto 2xl:px-[80px] px-[20px] h-[64px] flex items-center justify-between'>
             <div className='flex gap-[70px]'>
                 <Image src={Logo} alt='logo'/>
                 <div className='flex gap-8'>
