@@ -78,7 +78,7 @@ export const LoanInformationValue = ({
   return (
     <div
       className={cn(
-        " w-fit h-[30px] flex items-center justify-center px-2.5 py-1.5 rounded-[4px] text-[18px] leading-[10px] font-medium text-blue-500 bg-blue-levander/60",
+        " w-fit sm:h-[30px] h-6 flex items-center justify-center px-2.5 py-1.5 rounded-[4px] sm:text-[18px] leading-[10px] font-medium text-blue-500 bg-blue-levander/60",
         className
       )}
     >

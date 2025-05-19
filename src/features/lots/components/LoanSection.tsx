@@ -1,5 +1,4 @@
-import { PdfIcon } from "@/icons/PdfIcon";
-import { PriceBar } from "./PriceBar";
+import { Separator } from "@/Components/Separator";
 import {
   LoanInformationGroup,
   LoanInformationName,
@@ -7,6 +6,8 @@ import {
   LoanInformationsTitle,
   LoanInformationValue,
 } from "./LoanInformations";
+import { PDFDocument } from "./PDFDocument";
+import { PriceBar } from "./PriceBar";
 
 export const LoanSection = () => {
   return (
@@ -40,14 +41,14 @@ export const LoanSection = () => {
 
       {/* ---------------------------------- */}
 
-      <div className=" w-full h-px bg-white-700"></div>
+      <Separator />
 
       {/* ---------------------------------- */}
 
       <LoanInformations>
         <LoanInformationsTitle>Информация</LoanInformationsTitle>
 
-        <div className=" w-full max-w-[973px] h-fit flex flex-col sm:gap-8 gap-5">
+        <div className=" w-full h-fit flex flex-col sm:gap-8 gap-5">
           <LoanInformationGroup>
             <LoanInformationName>юридическое лицо</LoanInformationName>
             <LoanInformationValue>ООО Россельзохмашторг</LoanInformationValue>
@@ -58,7 +59,7 @@ export const LoanSection = () => {
           </LoanInformationGroup>
         </div>
 
-        <div className=" w-full max-w-[973px] h-fit flex flex-col sm:gap-8 gap-5">
+        <div className=" w-full h-fit flex flex-col sm:gap-8 gap-5">
           <LoanInformationGroup>
             <LoanInformationName>даты сбора</LoanInformationName>
             <LoanInformationValue>17.03.2024 — 20.04.2024</LoanInformationValue>
@@ -72,7 +73,7 @@ export const LoanSection = () => {
             <LoanInformationValue type="box">21 %</LoanInformationValue>
           </LoanInformationGroup>
         </div>
-        <div className=" w-full max-w-[973px] h-fit flex flex-col sm:gap-8 gap-5">
+        <div className=" w-full h-fit flex flex-col sm:gap-8 gap-5">
           <LoanInformationGroup>
             <LoanInformationName>начисление</LoanInformationName>
             <LoanInformationValue>На остаток долга</LoanInformationValue>
@@ -96,22 +97,11 @@ export const LoanSection = () => {
 
       {/* ---------------------------------- */}
 
-      <div className=" w-full h-px bg-white-700"></div>
+      <Separator />
 
       {/* ---------------------------------- */}
 
-      <div className=" w-full h-fit flex flex-col sm:gap-8 gap-6">
-        <p className=" font-bold sm:text-[20px] text-[18px] leading-[28px] text-blue-500">
-          Документы
-        </p>
-
-        <div className=" w-full max-w-[660px] h-[69.47px] px-4 sm:py-5 py-3 rounded-[4px] border flex items-center justify-between bg-gray-500">
-          <p className=" font-medium leading-[18px] sm:text-[18px] text-blue-500">
-            Инвестиционное предложение
-          </p>
-          <PdfIcon />
-        </div>
-      </div>
+      <PDFDocument />
     </div>
   );
 };
