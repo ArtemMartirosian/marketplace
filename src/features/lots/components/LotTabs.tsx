@@ -11,7 +11,7 @@ import { ProjectSection } from "./ProjectSection";
 export const LotTabs = () => {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const currentTab = searchParams.get("tab");
+  const currentTab = searchParams.get("tab") || 'loan';
   const isValidTab = TABS.some((item) => item.params === currentTab);
 
   const handleChangeTab = (tab: Tabs["params"]) => {
