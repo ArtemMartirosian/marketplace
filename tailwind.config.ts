@@ -1,9 +1,9 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -44,25 +44,28 @@ export default {
           gray: "#ececec",
         },
         white: {
-          500 : "#FFFFFF",
-          600: '#E6EAFB',
-          700: '#E4E9FB',
-          800: '#DDE2F1',
+          500: "#FFFFFF",
+          600: "#E6EAFB",
+          700: "#E4E9FB",
+          800: "#DDE2F1",
         },
         black: {
-          500: '#000000'
+          500: "#000000",
         },
         blue: {
-          500: '#10253E',
-          600: '#1940C4',
-          700: '#0A14FF'
-
+          500: "#10253E",
+          600: "#1940C4",
+          700: "#0A14FF",
+          levander: "#A7ADE7",
         },
-        gray : {
-          500 : '#F3F4F8',
-          700 : '#89909E',
-          800 : '#6A7383',
-          900 : '#959CA7',
+        gray: {
+          500: "#F3F4F8",
+          700: "#89909E",
+          800: "#6A7383",
+          900: "#959CA7",
+          border: "#DDE2F1",
+          light: "#959CA7",
+          dark: "#424551",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -93,7 +96,8 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-
     },
   },
 } satisfies Config;
+
+export default config;
