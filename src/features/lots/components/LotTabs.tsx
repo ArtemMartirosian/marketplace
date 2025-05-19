@@ -30,7 +30,7 @@ export const LotTabs = () => {
   }, [currentTab, isValidTab, router, searchParams]);
 
   return (
-    <>
+    <section className=" w-full h-fit flex flex-col 2xl:gap-[60px] gap-10">
       <div className=" w-full h-fit flex items-center sm:gap-8 xs:gap-6 gap-4 border-b border-gray-border">
         {TABS.map((item, index) => (
           <button
@@ -51,6 +51,6 @@ export const LotTabs = () => {
       ) : (
         <LegalEntitySection />
       )}
-    </>
+    </section>
   );
 };

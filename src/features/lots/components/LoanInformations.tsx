@@ -54,7 +54,7 @@ export const LoanInformationName = ({ children }: ChildrenProps) => {
   useLoanInformationGroupContext("LoanInformationName");
 
   return (
-    <p className=" sm:text-[18px] leading-[18px] font-medium text-gray-800">
+    <p className=" w-fit h-fit sm:text-[18px] leading-[18px] font-medium text-gray-800 flex items-center gap-1.5">
       {children}
     </p>
   );
