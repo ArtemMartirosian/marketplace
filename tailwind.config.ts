@@ -1,9 +1,9 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -12,7 +12,7 @@ export default {
       screens: {
         "4xl": "1920px",
         "3xl": "1720px",
-        "2xl": "1320px",
+        "2xl": "1405px",
         xl: "1280px",
         lg: "1024px",
         md: "768px",
@@ -47,6 +47,7 @@ export default {
           500: "#FFFFFF",
           600: "#E6EAFB",
           700: "#E4E9FB",
+          800: "#DDE2F1",
         },
         black: {
           500: "#000000",
@@ -61,6 +62,7 @@ export default {
           500: "#F3F4F8",
           700: "#89909E",
           800: "#6A7383",
+          900: "#959CA7",
           border: "#DDE2F1",
           light: "#959CA7",
           dark: "#424551",
@@ -97,3 +99,5 @@ export default {
     },
   },
 } satisfies Config;
+
+export default config;

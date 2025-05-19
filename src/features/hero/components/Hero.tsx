@@ -10,7 +10,7 @@ const Hero = () => {
                <Image
                    src={HeroBg}
                    alt='hero img'
-                   className='absolute top-0 right-0 z-1 object-cover'
+                   className='absolute object-center h-full top-0 right-0 z-1 '
                />
 
                 <div className='absolute left-1/2 transform -translate-x-1/2  max-w-[1078px] w-full z-10'>

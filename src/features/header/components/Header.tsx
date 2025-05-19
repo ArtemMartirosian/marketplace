@@ -3,17 +3,20 @@ import Logo from "@/assets/Logo.svg"
 import ChatIcon from "@/assets/icons/ChatIcon.svg"
 import Image from "next/image";
 import {MENU_CONSTANT} from "@/features/header/constants/menu.constants";
+import Link from "next/link";
 
 const Header = () => {
     return (
-        <header className='w-full text-black max-w-[1920px] mx-auto sm:px-[80px] px-[20px] h-[64px] flex items-center justify-between'>
+        <header className='w-full text-black max-w-[1920px] mx-auto 2xl:px-[80px] px-[20px] h-[64px] flex items-center justify-between'>
             <div className='flex gap-[70px]'>
-                <Image src={Logo} alt='logo'/>
+                <Link href='/'>
+                    <Image src={Logo} alt='logo'/>
+                </Link>
                 <div className='flex gap-8'>
                     {
                         MENU_CONSTANT.map((item) => {
                             return (
-                                <span className='hover:text-primary-blue cursor-pointer' key={item.id}>{item.name}</span>
+                                <Link href={item.link} className='hover:text-primary-blue cursor-pointer' key={item.id}>{item.name}</Link>
                             )
                         } )
                     }
