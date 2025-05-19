@@ -32,10 +32,10 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='h-[64px] 2xl:px-[80px] px-[30px] mt-5 flex items-center justify-between '>
+            <div className='min-h-[64px] 2xl:px-[80px] px-[30px] mt-5 flex lg:flex-row flex-col md:gap-0 gap-2 items-center justify-between '>
                 <Image src={Logo} alt='logo'/>
 
-                <div className='flex gap-6'>
+                <div className='flex sm:gap-6 gap-0 sm:flex-row flex-col'>
                     <span className='text-gray-700 cursor-pointer hover:text-primary-blue font-medium text-[12px] leading-[18px]'>Политика конфиденциальности</span>
                     <span className='text-gray-700 cursor-pointer hover:text-primary-blue font-medium text-[12px] leading-[18px]'>Согласие на обработку данных</span>
                 </div>
