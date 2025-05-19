@@ -35,6 +35,45 @@ const About = () => {
 
                     <div>
                         <p className='font-semibold 2xl:mt-[40px] text-[40px] leading-[52px]'>Все наши продукты разработаны с учетом потребностей инвесторов и эмитентов, что обеспечивает баланс между риском и доходностью</p>
+
+                        <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 2xl:mt-[60px] mt-[30px]'>
+
+                            <div className='flex flex-col gap-5'>
+                                <div className='h-[319px] flex items-center justify-center rounded-[4px] bg-gray-800 text-black-500 text-[40px] leading-[36px]'>
+                                    Займы
+                                </div>
+                                <p className='text-[24px] leading-[36px]'>Краткосрочные и долгосрочные займы для финансирования строительства и реконструкции гостиниц и туристических объектов.</p>
+
+                            </div>
+
+                            <div className='flex flex-col gap-5'>
+                                <div className='h-[319px] flex items-center justify-center rounded-[4px] bg-gray-800 text-black-500 text-[40px] leading-[36px]'>
+                                    Займы
+                                </div>
+                                <p className='text-[24px] leading-[36px]'>
+                                    Выпуск облигаций для привлечения долгосрочного капитала с фиксированной процентной ставкой.
+                                </p>
+
+                            </div>
+
+                            <div className='flex flex-col gap-5'>
+                                <div className='h-[319px] flex items-center justify-center rounded-[4px] bg-gray-800 text-black-500 text-[40px] leading-[36px]'>
+                                    Инвест.  договоры
+                                </div>
+                                <p className='text-[24px] leading-[36px]'>
+                                    Долгосрочные контракты, предусматривающие участие инвесторов в доходах от эксплуатации объектов.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <p className='font-semibold 2xl:mt-[40px] text-[40px] leading-[52px]'>
+                            Наша стратегия развития направлена на укрепление позиций на рынке и расширение продуктового портфеля
+                        </p>
+
                     </div>
 
                 </div>
