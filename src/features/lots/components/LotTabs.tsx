@@ -31,13 +31,13 @@ export const LotTabs = () => {
 
   return (
     <>
-      <div className=" w-full h-fit flex items-center gap-8 border-b border-gray-border">
+      <div className=" w-full h-fit flex items-center sm:gap-8 xs:gap-6 gap-4 border-b border-gray-border">
         {TABS.map((item, index) => (
           <button
             key={index + item.params}
             data-active={currentTab === item.params ? "on" : "off"}
             onClick={() => handleChangeTab(item.params)}
-            className=" h-[27px] font-medium xs:text-[18px] leading-[18px] border-b-[2px] border-transparent text-gray-800 data-[active=on]:border-blue-700 data-[active=on]:text-blue-700 transition-all"
+            className=" h-[27px] font-medium sm:text-[18px] text-sm leading-[18px] border-b-[2px] border-transparent text-gray-800 data-[active=on]:border-blue-700 data-[active=on]:text-blue-700 transition-all"
           >
             {item.tab}
           </button>

@@ -2,7 +2,7 @@ import { LotTabs } from "./LotTabs";
 
 export const SingleLotPage = () => {
   return (
-    <section className=" w-full max-w-[1345px] mx-auto 2xl:py-[80px] py-12 2xl:px-0 px-8">
+    <section className=" w-full max-w-[1345px] mx-auto 2xl:py-[80px] py-12 2xl:px-0 md:px-8 px-5">
       <div className=" w-full h-fit flex flex-col gap-8">
         <div className=" w-full flex sm:items-center sm:justify-between sm:flex-row flex-col gap-y-2">
           <p className=" font-bold leading-[42px] 2xl:text-[32px] md:text-[24px] text-[18px] text-blue-500">
