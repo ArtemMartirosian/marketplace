@@ -37,7 +37,7 @@ export const LotTabs = () => {
             key={index + item.params}
             data-active={currentTab === item.params ? "on" : "off"}
             onClick={() => handleChangeTab(item.params)}
-            className=" h-[27px] font-medium text-[18px] leading-[18px] border-b-[2px] border-transparent text-gray-800 data-[active=on]:border-blue-700 data-[active=on]:text-blue-700 transition-all"
+            className=" h-[27px] font-medium xs:text-[18px] leading-[18px] border-b-[2px] border-transparent text-gray-800 data-[active=on]:border-blue-700 data-[active=on]:text-blue-700 transition-all"
           >
             {item.tab}
           </button>
