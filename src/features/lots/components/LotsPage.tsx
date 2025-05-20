@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import LotListItem from "@/features/lots/components/LotListItem";
 import SeeMoreButton from "@/Components/SeeMoreButton";
 import {LOTS_FILTER} from "@/features/lots/constants/losts.constants";
-import button from "@/Components/Button";
 import Select from "@/Components/Select";
 
 
