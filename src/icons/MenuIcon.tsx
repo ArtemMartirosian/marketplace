@@ -1,0 +1,15 @@
+export const MenuIcon = () => {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="5" y="16.2" width="6" height="1.6" rx="0.8" fill="#0D0B26" />
+      <rect x="5" y="11.2" width="14" height="1.6" rx="0.8" fill="#0D0B26" />
+      <rect x="13" y="6.2" width="6" height="1.6" rx="0.8" fill="#0D0B26" />
+    </svg>
+  );
+};
