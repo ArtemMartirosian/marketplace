@@ -19,7 +19,7 @@ const LotsPage = () => {
   return (
     <div className="w-full  bg-[#F3F4F8] flex justify-between pb-[115px]">
       <div className="max-w-[1920px] w-full mx-auto">
-        <div className="max-w-[1480px] mx-auto w-full 2xl:px-[80px] px-[30px] flex flex-col gap-8  2xl:mt-[120px] sm:mt-[80px] mt-[40px] w-full">
+        <div className="max-w-[1480px] mx-auto 2xl:px-[80px] sm:px-[30px] px-5 flex flex-col gap-8  2xl:mt-[120px] sm:mt-[80px] mt-[40px] w-full">
           <h4 className="text-blue-500 font-semibold 2xl:text-[50px] sm:text-[32px] text-[24px] 2xl:leading-[52px] sm:leading-[30px] leading-[24px]">
             Лоты
           </h4>
@@ -48,14 +48,14 @@ const LotsPage = () => {
           </div>
 
           <div className="2xl:mt-[78px] mt-[40px]">
-            <div className=" w-fit h-fit flex items-end gap-6">
-              <div className="rounded-[4px] w-[480px] grid grid-cols-4 h-[48px] bg-white-800">
+            <div className=" w-fit h-fit flex flex-wrap items-end gap-6">
+              <div className="2xs:rounded-[4px] sm:w-[480px] 2xs:w-full w-fit flex 2xs:grid grid-cols-4 2xs:h-12 h-fit 2xs:bg-white-800 2xs:border-b-none border-b border-b-gray-300">
                 {LOTS_FILTER.map(({ id, name }) => {
                   return (
                     <button
                       key={id}
                       onClick={() => setSelectLotsType(id)}
-                      className={`font-medium sm:text-[16px] text-[14px] leading-[24px] sm:py-[12px] py-[8px] rounded-[4px] ${
+                      className={`font-medium xs:text-base text-sm leading-[24px] whitespace-nowrap 2xs:p-0 px-2 py-1 2xs:rounded-[4px] ${
                         selectLotsType === id
                           ? " bg-primary-blue text-white-500"
                           : "text-gray-800"
